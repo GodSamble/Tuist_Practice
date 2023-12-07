@@ -14,12 +14,11 @@ let project = Project.makeModule(
     packages: [
         .remote(url: "https://github.com/SnapKit/SnapKit.git", requirement: .upToNextMinor(from: "5.0.0")),
         .remote(url: "https://github.com/devxoul/Then", requirement: .upToNextMajor(from: "2.0.0")),
-        .remote(url: "https://github.com/ReactiveX/RxSwift.git", requirement: .exact("6.6.0")),
+        .remote(url: "https://github.com/ReactiveX/RxSwift.git", requirement: .upToNextMajor(from: "6.0.0")),
     ],
     dependencies: [
         .package(product: "SnapKit"),
         .package(product: "Then"),
         .package(product: "RxSwift"),
-        .package(product: "RxCocoa"),
     ]
 )
